@@ -1,2 +1,1 @@
-$ dig flagodna.xyz +nostats +nocomments +nocmd
-flagodna.xyz.   3600  IN  A 185.199.108.153
+flagodna.xyz
