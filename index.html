@@ -473,38 +473,50 @@ border: solid 1px}
 
 
             <div id="themes">
+
                 <div class="toolbar">
                     <h1>MTA TV Live</h1>
                     
                     <a href="#home" class="back">Back</a>
-                </div>
+                </div><div    >
+                	<script type='text/javascript'>
+//<![CDATA[
+var vid, fullscreenbtn;
+function intializePlayer(){
+ vid = document.getElementById("frameFullscreen");
+ fullscreenbtn = document.getElementById("fullscreenbtn");
+ fullscreenbtn.addEventListener("click",toggleFullScreen,false);
+}
+window.onload = intializePlayer;
+function toggleFullScreen(){
+ if(vid.requestFullScreen){
+  vid.requestFullScreen();
+  screen.orientation.lock("landscape-primary");
+ } else if(vid.mozRequestFullScreen){
+  vid.mozRequestFullScreen();
+  screen.orientation.lock("landscape-primary");
+ } else if(vid.webkitRequestFullscreen){
+  vid.webkitRequestFullscreen();
+  screen.orientation.lock("landscape-primary");
+ } else if(vid.msRequestFullscreen){
+  vid.msRequestFullscreen();
+  screen.orientation.lock("landscape-primary");
+ }
+}
+</script>
                 <body style="background: #111;margin:0px;padding:0px;overflow:hidden">
-<iframe style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%" preload="none" controls playsinline webkit-playsinline src="https://www.youtube.com/embed/live_stream?channel=UCIrj7gqiu8uUfgMitYFzkNg" frameborder="0" allowfullscreen></iframe>
+<iframe  id="frameFullscreen"  style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:10%;width:10%;position:absolute;top:0px;left:0px;right:0px;bottom:0px"  preload="none" controls playsinline webkit-playsinline src="https://www.youtube.com/embed/live_stream?channel=UCIrj7gqiu8uUfgMitYFzkNg" frameborder="0" allowfullscreen></iframe>
+<span class='toggle' href='javascript:void(0)' id='fullscreenbtn' role='button' tabindex='0'><svg class='icons' viewBox='0 0 24 24'><path fill="#000000" d="M10,21V19H6.41L10.91,14.5L9.5,13.09L5,17.59V14H3V21H10M14.5,10.91L19,6.41V10H21V3H14V5H17.59L13.09,9.5L14.5,10.91Z" /></svg>PUTAR</span>
+</div>
 </body>
+<style type="text/css">
+.toggle{display:block;background-color:#888;height:30px;line-height:30px;overflow:hidden;margin:10px auto 0;text-align:center;border-radius:3px;color:#fff;cursor:pointer}
+.toggle .icons{width:20px;height:20px;vertical-align:middle;fill:#000;margin-right:15px}
+</style>
 
             </div>
  
-<div id="toko"><div class="toolbar">
-	<h1>Toko MTA</h1>
-	<a href="#home" class="back">Back</a>
 
-</div>
- 
-     <div class="scroll">
-                    <h2> </h2>
-                    <ul class="rounded">
-<table  >
-  
-  <tr style="background: #710eab; color: #fff" >
-    <td> <a style="; text-align: center;margin-top: 40%;color: #fff;font-size: 23px"  target="_blank" href="http://cas8398.github.io/github.io/index.html"><b>Buka Toko MTA</b></a> </td>
-    
-  </tr>
-
-
-</table>
-                    </ul>
-</div>
-</div>
 
 
             
@@ -1122,7 +1134,7 @@ border: solid 1px}
                     <ul class="rounded">
 <table  >
   <tr>
-    <td> 6 cara menjadi orang yang berserah diri kepeada allah </td>
+    <td> <a target="_blank" href="baru/zona-hadist/shahih abu daud/frame.html">Abu Daud</a></td>
     
   </tr>
   <tr>
