@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+TR { 
+  visibility: hidden;
+}
+</style>
+<head><script language="JavaScript">
+<!--
+
+var x,y
+var step=20
+var flag=0
+
+var message="Kampung Sunnah."
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : event.clientX
+	y = (document.layers) ? e.pageY : event.clientY
+	flag=1
+}
+
+function textfollow() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.all.span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("textfollow()",10)
+}
+
+//-->
+</script>
+
+<STYLE>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:8pt;
+	font-family:verdana;
+	color:FF00FF
+}
+.style1 {
+	text-align: justify;
+}
+.style2 {
+	font-family: "Traditional Arabic";
+	font-weight: bold;
+	text-align: justify;
+}
+.style3 {
+	font-size: large;
+}
+.style4 {
+	font-family: "Traditional Arabic";
+	font-weight: bold;
+	font-size: large;
+	text-align: justify;
+}
+</STYLE>
+<title>30. Pembunuhan Terhadap Kaum Khawarij</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1256">
+
+
+
+
+<script type="text/javascript" language="JavaScript" src="../../template/nonscroll.js"></script>
+<style type="text/css" media="screen">
+.fixbar
+ {
+padding: 0px 0px 0px 0px;
+border-bottom: none;
+vertical-align: top;
+z-index: 2;
+visibility: visible;
+left: 0;
+top: 0;
+position: absolute;
+width: 100%;
+height: 31px;
+ }
+.content
+ {
+ left: 0;
+ top: 40px;
+ margin: 0;
+ position: absolute;
+ padding: 10px;
+ overflow: visible;
+ height: 100%;
+ z-index: 1;
+ }
+</style>
+<style type="text/css" media="print">
+.fixbar
+ { }
+.content
+ { overflow: visible; }
+</style>
+</head>
+
+<body bgColor=#ffffff leftMargin=0 topMargin=0 scroll=no marginheight="0" 
+marginwidth="0">
+<DIV class=fixbar id=nsr>
+<TABLE style="WIDTH: 100%; HEIGHT: 31px" height=30 cellSpacing=5 cellPadding=2 
+width="100%" bgColor=green border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD vAlign=center align=left height=30>
+      <P align=center><SPAN class=title></SPAN><FONT color=#f0f0f0><FONT 
+      face=Tahoma color=#dadada></FONT></FONT><STRONG><FONT face=Tahoma 
+      color=white size=2>Shahih Sunan Abu Daud </FONT></STRONG></P>
+      <P align=center><STRONG><FONT face=Tahoma color=white size=2>Muhammad 
+      Nashiruddin Al-Albani</FONT></STRONG></P></TD>
+    <TD align=right width=33><IMG height=34 alt="" src="../../template/logo.gif" width=34> </TD></TR></TBODY></TABLE></DIV>
+<DIV class=content id=mainbody>
+<P><FONT face=Arial size=2>
+<SCRIPT language=JavaScript>
+<!--
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+//-->
+</SCRIPT>
+
+<P align=center><FONT face=Verdana><FONT face="Times New Roman"><STRONG>30. 
+Pembunuhan Terhadap Kaum Khawarij</STRONG></P>
+</FONT></FONT><span LANG="AR-SA"><font SIZE="6" class="style3">
+<p DIR="RTL" class="style2">Úóäú ÃóÈöí ĞóÑøò ŞóÇáó<span lang="en-us"> </span>
+ŞóÇáó ÑóÓõæáõ Çááøóåö Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó ãóäú İóÇÑóŞó 
+ÇáúÌóãóÇÚóÉó ÔöÈúÑğÇ İóŞóÏú ÎóáóÚó ÑöÈúŞóÉó ÇáúÅöÓúáóÇãö ãöäú ÚõäõŞöåö</p>
+</font></span><FONT face="Times New Roman">
+<P class="style1">4758. Dari Abu Dzar RA, ia berkata, "Rasulullah SAW bersabda, <I>"Barangsiapa 
+yang memisahkan diri dari jama'ah (kelompok kaum muslimin) sejengkal saja, 
+berarti ia telah menyingkirkan Islam dari lehernya." <strong>Shahih: Azh-Zhilal 
+</strong></I><STRONG>(892).</STRONG></P>
+</FONT><span LANG="AR-SA"><font SIZE="6" class="style3">
+<p DIR="RTL" class="style2">Úóäú Ãõãøö ÓóáóãóÉó ÒóæúÌö ÇáäøóÈöíøö Õóáøóì Çááøóåõ 
+Úóáóíúåö æóÓóáøóãó ŞóÇáóÊú<span lang="en-us"> </span>ŞóÇáó ÑóÓõæáõ Çááøóåö 
+Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó ÓóÊóßõæäõ Úóáóíúßõãú ÃóÆöãøóÉñ ÊóÚúÑöİõæäó 
+ãöäúåõãú æóÊõäúßöÑõæäó İóãóäú ÃóäúßóÑó ŞóÇáó ÃóÈõæ ÏóÇæõÏ ŞóÇáó åöÔóÇãñ 
+ÈöáöÓóÇäöåö İóŞóÏú ÈóÑöÆó æóãóäú ßóÑöåó ÈöŞóáúÈöåö İóŞóÏú Óóáöãó æóáóßöäú ãóäú 
+ÑóÖöíó æóÊóÇÈóÚó İóŞöíáó íóÇ ÑóÓõæáó Çááøóåö ÃóİóáóÇ äóŞúÊõáõåõãú ŞóÇáó ÇÈúäõ 
+ÏóÇæõÏó ÃóİóáóÇ äõŞóÇÊöáõåõãú ŞóÇáó áóÇ ãóÇ ÕóáøóæúÇ</p>
+</font></span><FONT face="Times New Roman">
+<P class="style1">4760. Dari Ummu Salamah (istri Nabi SAW), ia berkata, "Rasulullah SAW 
+bersabda, <I>'Akan ada diantara kalian pemimpin pemimpin yang kalian mengenalnya 
+dan kalian mengingkarinya. Barangsiapa yang mengingkari dengan lisannya, berarti 
+ia telah berlepas diri darinya. Dan barangsiapa yang berlepas diri dengan 
+hatinya, maka ia akan selamat. Tetapi mereka yang ridha dan mengikuti.' 
+</I>Seseorang bertanya kepada Nabi SAW, 'Wahai Rasulullah, apakah kami boleh 
+membunuhnya?' (Dalam riwayat lain disebutkan, <I>'Bolehkah kami memeranginya?') 
+</I>Rasulullah SAW menjawab, <I>'Tidak, selama mereka melaksana kan 
+shalat'."<STRONG> Shahih: </STRONG></I><STRONG>Muslim. At-Tirmidzi 
+(2381)</STRONG></P>
+</FONT><span LANG="AR-SA">
+<p DIR="RTL" class="style4">Úóäú Ãõãøö ÓóáóãóÉó Úóäú ÇáäøóÈöíøö Õóáøóì Çááøóåõ 
+Úóáóíúåö æóÓóáøóãó ÈöãóÚúäóÇåõ ŞóÇáó İóãóäú ßóÑöåó İóŞóÏú ÈóÑöÆó æóãóäú ÃóäúßóÑó 
+İóŞóÏú Óóáöãó ŞóÇáó ŞóÊóÇÏóÉõ íóÚúäöí ãóäú ÃóäúßóÑó ÈöŞóáúÈöåö æóãóäú ßóÑöåó 
+ÈöŞóáúÈöåö</p>
+</span><FONT face="Times New Roman">
+<P class="style1">4761. Dari Ummu Salamah, dari Nabi SAW... disebutkan hadits dengan makna yang 
+sama. Namun dengan redaksi, <I>"Barangsiapa yang tidak menyukai, berarti ia 
+telah berlepas diri dan barangsiapa yang mengingkari, maka ia akan selamat. " 
+</I><STRONG>Qatadah (perawi hadits) berkata, "Maksudnya adalah orang yang 
+mengingkari dengan hatinya dan orang yang tidak menyukai dengan hatinya." 
+<I>Shahih: Muslim. </I>Lihat hadits sebelumnya</STRONG>.</P>
+</FONT><span LANG="AR-SA"><font SIZE="6" class="style3">
+<p DIR="RTL" class="style2">Úóäú ÚóÑúİóÌóÉó ŞóÇáó<span lang="en-us"> </span>
+ÓóãöÚúÊõ ÑóÓõæáó Çááøóåö Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó íóŞõæáõ ÓóÊóßõæäõ İöí 
+ÃõãøóÊöí åóäóÇÊñ æóåóäóÇÊñ æóåóäóÇÊñ İóãóäú ÃóÑóÇÏó Ãóäú íõİóÑøöŞó ÃóãúÑó 
+ÇáúãõÓúáöãöíäó æóåõãú ÌóãöíÚñ İóÇÖúÑöÈõæåõ ÈöÇáÓøóíúİö ßóÇÆöäğÇ ãóäú ßóÇäó</p>
+</font></span><FONT face="Times New Roman">
+<P class="style1">4762. Dari Arfajah, ia berkata, "Aku mendengar Rasulullah SAW bersabda, 
+<I>'Akan menimpa umatku fitnah dan bid'ah, fitnah dan bid'ah serta fitnah dan 
+bid'ah. Barangsiapa yang berusaha mencoba memecahkan persatuan kaum muslimin 
+</I>—</FONT><FONT face="Times New Roman"><FONT face="Times New Roman"><I>saat mereka berada dalam kondisi 
+bersatu</I></FONT><FONT face="Times New Roman">—</FONT><FONT 
+face="Times New Roman"> <I>maka pukullah ia dengan pedang; siapapun dia." 
+</FONT><FONT 
+face="Times New Roman"><STRONG>Shahih</STRONG></P></I></FONT></FONT></FONT></P><FONT size=2>
+<HR>
+</FONT><FONT face=Tahoma color=#808080 size=1>Copyright © 2007-2008 
+kampungsunnah.org</FONT></DIV>
+</body>
+</html>
