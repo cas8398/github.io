@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+TR { 
+  visibility: hidden;
+}
+</style>
+<head><script language="JavaScript">
+<!--
+
+var x,y
+var step=20
+var flag=0
+
+var message="Kampung Sunnah."
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : event.clientX
+	y = (document.layers) ? e.pageY : event.clientY
+	flag=1
+}
+
+function textfollow() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.all.span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("textfollow()",10)
+}
+
+//-->
+</script>
+
+<STYLE>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:8pt;
+	font-family:verdana;
+	color:FF00FF
+}
+.style1 {
+	font-size: small;
+	text-align: justify;
+}
+.style2 {
+	font-size: small;
+	font-weight: bold;
+}
+.style3 {
+	text-align: center;
+}
+.style4 {
+	font-size: large;
+	font-weight: bold;
+}
+.style5 {
+	font-family: "Traditional Arabic";
+	text-align: justify;
+}
+.style6 {
+	text-align: justify;
+}
+.style7 {
+	font-size: small;
+}
+.style8 {
+	font-family: "Traditional Arabic";
+	font-weight: bold;
+	text-align: justify;
+}
+.style9 {
+	font-size: large;
+}
+</STYLE>
+<title>2. Berburu</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1256">
+
+
+
+
+<script type="text/javascript" language="JavaScript" src="../../template/nonscroll.js"></script>
+<style type="text/css" media="screen">
+.fixbar
+ {
+padding: 0px 0px 0px 0px;
+border-bottom: none;
+vertical-align: top;
+z-index: 2;
+visibility: visible;
+left: 0;
+top: 0;
+position: absolute;
+width: 100%;
+height: 31px;
+ }
+.content
+ {
+ left: 0;
+ top: 40px;
+ margin: 0;
+ position: absolute;
+ padding: 10px;
+ overflow: visible;
+ height: 100%;
+ z-index: 1;
+ }
+</style>
+<style type="text/css" media="print">
+.fixbar
+ { }
+.content
+ { overflow: visible; }
+</style>
+</head>
+
+<body bgColor=#ffffff leftMargin=0 topMargin=0 scroll=no marginheight="0" 
+marginwidth="0">
+<DIV class=fixbar id=nsr>
+<TABLE style="WIDTH: 100%; HEIGHT: 31px" height=30 cellSpacing=5 cellPadding=2 
+width="100%" bgColor=green border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD vAlign=center align=left height=30>
+      <P align=center><SPAN class=title></SPAN><FONT color=#f0f0f0><FONT 
+      face=Tahoma color=#dadada></FONT></FONT><STRONG><FONT face=Tahoma 
+      color=white size=2>Shahih Sunan Abu Daud </FONT></STRONG></P>
+      <P align=center><STRONG><FONT face=Tahoma color=white size=2>Muhammad 
+      Nashiruddin Al-Albani</FONT></STRONG></P></TD>
+    <TD align=right width=33><IMG height=34 alt="" src="../../template/logo.gif" width=34> </TD></TR></TBODY></TABLE></DIV>
+<DIV class=content id=mainbody>
+<P><FONT face=Arial size=2>
+<SCRIPT language=JavaScript>
+<!--
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+//-->
+</SCRIPT>
+
+<P class="style3"><FONT size=+0><FONT face=Arial></FONT></FONT>&nbsp;<FONT face="Times New Roman" size="2"><span class="style2">2. Berburu</span></P>
+<span LANG="AR-SA"><font SIZE="6" class="style4">
+<p DIR="RTL" class="style5">Úóäú ÚóÏöíøö Èúäö ÍóÇÊöãò ŞóÇáó<span lang="en-us">
+</span>ÓóÃóáúÊõ ÇáäøóÈöíøó Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó ŞõáúÊõ Åöäøöí 
+ÃõÑúÓöáõ ÇáúßöáóÇÈó ÇáúãõÚóáøóãóÉó İóÊõãúÓößõ Úóáóíøó ÃóİóÂßõáõ ŞóÇáó ÅöĞóÇ 
+ÃóÑúÓóáúÊó ÇáúßöáóÇÈó ÇáúãõÚóáøóãóÉó æóĞóßóÑúÊó ÇÓúãó Çááøóåö İóßõáú ãöãøóÇ 
+ÃóãúÓóßúäó Úóáóíúßó ŞõáúÊõ æóÅöäú ŞóÊóáúäó ŞóÇáó æóÅöäú ŞóÊóáúäó ãóÇ áóãú 
+íóÔúÑóßúåóÇ ßóáúÈñ áóíúÓó ãöäúåóÇ ŞõáúÊõ ÃóÑúãöí ÈöÇáúãöÚúÑóÇÖö İóÃõÕöíÈõ 
+ÃóİóÂßõáõ ŞóÇáó ÅöĞóÇ ÑóãóíúÊó ÈöÇáúãöÚúÑóÇÖö æóĞóßóÑúÊó ÇÓúãó Çááøóåö İóÃóÕóÇÈó 
+İóÎóÑóŞó İóßõáú æóÅöäú ÃóÕóÇÈó ÈöÚóÑúÖöåö İóáóÇ ÊóÃúßõáú</p>
+</font></span>
+<P class="style1">2847. Dari Adi bin Hatim, ia berkata: Aku bertanya kepada Rasulullah SAW, 
+"Sesungguhnya aku telah melepas anjing terlatih, lalu anjing tersebut berhasil 
+menangkap buruan, maka apakah aku boleh memakan hasil buruan tersebut?" Nabi SAW 
+menjawab, <I>"Jika kamu melepas anjing yang terlatih sambil menyebut nama Allah, 
+maka makanlah binatang burun yang telah ditangkap oleh anjing tersebut untukmu. 
+" </I>Tanyaku lagi, "Walaupun anjing itu telah membunuhnya?" Nabi SAW menjawab, 
+"Ya, <I>walaupun telah dibunuh oleh anjing tersebut, selama dalam pembunuhan 
+tadi tidak dibantu oleh anjing lain." </I>Tanyaku, "Aku melempar buruan dengan 
+tombak lalu mengenainya, apakah aku boleh memakannya?" Beliau SAW menjawab, 
+<I>"Jika kamu melemparnya dengan tombak yang runcing dan kamu telah menyebut 
+nama Allah, lalu menembus di tubuhnya dan membunuhnya, maka kamu boleh memakannya. Namun, jika binatang tersebut 
+mati terkena pangkal tombak yang tumpul, maka kamu tidak boleh memakannya. &quot;<strong> 
+(Shahih)</strong></p>
+</i>
+<span LANG="AR-SA"><font SIZE="6" class="style9">
+<p DIR="RTL" class="style8">Úóäú ÚóÏöíøö Èúäö ÍóÇÊöãò ŞóÇáó<span lang="en-us">
+</span>ÓóÃóáúÊõ ÇáäøóÈöíøó Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó ŞõáúÊõ ÅöäøóÇ 
+äóÕöíÏõ ÈöåóĞöåö ÇáúßöáóÇÈö İóŞóÇáó áöí ÅöĞóÇ ÃóÑúÓóáúÊó ßöáóÇÈóßó 
+ÇáúãõÚóáøóãóÉó æóĞóßóÑúÊó ÇÓúãó Çááøóåö ÚóáóíúåóÇ İóßõáú ãöãøóÇ ÃóãúÓóßúäó 
+Úóáóíúßó æóÅöäú ŞóÊóáó ÅöáøóÇ Ãóäú íóÃúßõáó ÇáúßóáúÈõ İóÅöäú Ãóßóáó ÇáúßóáúÈõ 
+İóáóÇ ÊóÃúßõáú İóÅöäøöí ÃóÎóÇİõ Ãóäú íóßõæäó ÅöäøóãóÇ ÃóãúÓóßóåõ Úóáóì äóİúÓöåö</p>
+</font></span>
+<p class="style6"><span class="style7">2848. Dari Adi bin Hatim, ia berkata: Aku bertanya kepada Nabi SAW, &quot;Kami 
+pernah berburu dengan anjing ini.&quot; Nabi SAW bersabda kepadaku, <i>&quot;Jika kamu 
+melepaskan anjingmu yang terlatih dan kamu telah menyebut nama Allah bersamaan 
+dengan melepas anjing tersebut, maka makanlah binatang buruan yang telah 
+diperoleh anjing tersebut untukmu, walaupun ia telah membunuhnya, kecuali jika 
+ia telah memakannya. Jika anjing tersebut memakannya maka tidak boleh kamu 
+memakannya, karena aku khawatir ia menangkapnya memang untuk dirinya sendiri.&quot;
+<b>(Shahih: Muttafaq 'Alaih)</p>
+</b></i>
+<span LANG="AR-SA"><font SIZE="6" class="style9">
+<p DIR="RTL" class="style8">Úóäú ÚóÏöíøö Èúäö ÍóÇÊöãò<span lang="en-us"> </span>
+Ãóäøó ÇáäøóÈöíøó Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó ŞóÇáó ÅöĞóÇ ÑóãóíúÊó 
+ÈöÓóåúãößó æóĞóßóÑúÊó ÇÓúãó Çááøóåö İóæóÌóÏúÊóåõ ãöäú ÇáúÛóÏö æóáóãú ÊóÌöÏúåõ 
+İöí ãóÇÁò æóáóÇ İöíåö ÃóËóÑñ ÛóíúÑõ Óóåúãößó İóßõáú æóÅöĞóÇ ÇÎúÊóáóØó 
+ÈößöáóÇÈößó ßóáúÈñ ãöäú ÛóíúÑöåóÇ İóáóÇ ÊóÃúßõáú áóÇ ÊóÏúÑöí áóÚóáøóåõ ŞóÊóáóåõ 
+ÇáøóĞöí áóíúÓó ãöäúåóÇ</p>
+</font></span>
+<p class="style6">2849. Dari Adi bin Hatim: Nabi SAW bersabda, </span> <i>
+<span class="style7">&quot;Jika kamu melepaskan 
+anak panahmu dan kamu telah menyebut nama Allah lalu kamu temukan buruanmu esok 
+harinya dan tidak kamu temukan di dalam air serta tidak ada bekas luka pada badannya kecuali bekas luka anak 
+panahmu, maka makanlah. Namun jika bercampur dengan bekas serangan dari anjing 
+lain, maka kamu tidak boleh memakannya, karena kamu tidak tahu (penyebab 
+kematiannya), mungkin buruan tersebut terbunuh oleh selain anjingmu.&quot; <b>
+{Shahih: Muttafaq 'Alaih)</p>
+</b></i>
+<span LANG="AR-SA"><font SIZE="6" class="style9">
+<p DIR="RTL" class="style8">Úóäú ÚóÏöíøö Èúäö ÍóÇÊöãò<span lang="en-us"> </span>
+Ãóäøó ÇáäøóÈöíøó Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó ŞóÇáó ÅöĞóÇ æóŞóÚóÊú 
+ÑóãöíøóÊõßó İöí ãóÇÁò İóÛóÑöŞó İóãóÇÊó İóáóÇ ÊóÃúßõáú</p>
+</font></span>
+<p class="style6">2850. Dari Addi bin Hatim: Nabi SAW bersabda, <i>&quot;Jika buruanmu jatuh ke air 
+lalu tenggelam dan mati, maka kamu tidak boleh memakannya. &quot; <b>(Shahih: 
+Muttafaq 'Alaih)</p>
+</b></i>
+<span LANG="AR-SA"><font SIZE="6" class="style9">
+<p DIR="RTL" class="style8">Úóäú ÚóÏöíøö Èúäö ÍóÇÊöãò<span lang="en-us"> </span>
+Ãóäøó ÇáäøóÈöíøó Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó ŞóÇáó ãóÇ ÚóáøóãúÊó ãöäú 
+ßóáúÈò Ãóæú ÈóÇÒò Ëõãøó ÃóÑúÓóáúÊóåõ æóĞóßóÑúÊó ÇÓúãó Çááøóåö İóßõáú ãöãøóÇ 
+ÃóãúÓóßó Úóáóíúßó ŞõáúÊõ æóÅöäú ŞóÊóáó ŞóÇáó ÅöĞóÇ ŞóÊóáóåõ æóáóãú íóÃúßõáú 
+ãöäúåõ ÔóíúÆğÇ İóÅöäøóãóÇ ÃóãúÓóßóåõ Úóáóíúßó<span lang="en-us"> </span>ŞóÇáó 
+ÃóÈõæ ÏóÇæõÏ ÇáúÈóÇÒõ ÅöĞóÇ Ãóßóáó İóáóÇ ÈóÃúÓó Èöåö æóÇáúßóáúÈõ ÅöĞóÇ Ãóßóáó 
+ßõÑöåó æóÅöäú ÔóÑöÈó ÇáÏøóãó İóáóÇ ÈóÃúÓó Èöåö</p>
+</font></span>
+<p class="style6">2851. Dari Adi bin Hatim: Nabi SAW bersabda, <i>&quot;Sesuatu yang telah kamu 
+latih berupa anjing atau burung, lalu kamu lepaskan (bersamaan) dengan menyebut 
+nama Allah, maka makanlah (daging binatang) yang telah mereka tangkap untukmu.&quot;
+</i>Aku bertanya, <i>&quot;Walaupun buruan tadi telah dibunuhnya?&quot; </i>Rasulullah SAW 
+menjawab, <i>&quot;Jika ia membunuhnya dan ia tidak memakannya sedikit pun, berarti 
+ia menangkapnya untukmu. &quot;</p>
+</i>
+<p class="style6">Abu Daud berkata: Kalau Al Baz (burung) yang memakannya maka hukumnya tidak 
+apa-apa, tapi jika anjing yang memakannya maka hukumnya makruh, namun jika 
+anjing itu hanya meminum darahnya maka tidak apa-apa.&quot; <i><b>(Shahih)</p>
+</b></i></font></span><span LANG="EN"><font FACE="Times New Roman">
+<p class="style6">Kata, <i>&quot;atau Al Baz (burung)&quot; </i>statusnya mungkar.</p>
+</font><span LANG="AR-SA"><font SIZE="6" class="style9">
+<p DIR="RTL" class="style8">Úóäú ÚóÏöíøö Èúäö ÍóÇÊöãò Ãóäøóåõ ŞóÇáó<span lang="en-us">
+</span>íóÇ ÑóÓõæáó Çááøóåö ÃóÍóÏõäóÇ íóÑúãöí ÇáÕøóíúÏó İóíóŞúÊóİöí ÃóËóÑóåõ 
+Çáúíóæúãóíúäö æóÇáËøóáóÇËóÉó Ëõãøó íóÌöÏõåõ ãóíøöÊğÇ æóİöíåö Óóåúãõåõ ÃóíóÃúßõáõ 
+ŞóÇáó äóÚóãú Åöäú ÔóÇÁó Ãóæú ŞóÇáó íóÃúßõáõ Åöäú ÔóÇÁó</p>
+</font></span><font FACE="Times New Roman">
+<p class="style6">2853. Dari Adi bin Hatim, ia berkata, &quot;Ya Rasulullah, salah seorang di antara 
+kami ada yang memanah buruan lalu mengenainya, lalu ia melacak bekasnya hingga 
+dua hari atau tiga hari, kemudian ia menemukannnya dalam keadaan mati, jadi 
+apakah ia boleh memakannya?&quot; Nabi SAW menjawab, <i>&quot;Ya, kalau ia menghendaki </i>
+—atau beliau menjawab, <i>&quot;Ia boleh memakannya jika menghendakinya</i>—. &quot; <b>
+<i>{Shahih: </i>Bukhari)</p>
+</b>
+</font><span LANG="AR-SA"><font SIZE="6" class="style4">
+<p DIR="RTL" class="style5">ŞóÇáó ÚóÏöíøõ Èúäõ ÍóÇÊöãò<span lang="en-us"> </span>
+ÓóÃóáúÊõ ÇáäøóÈöíøó Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó Úóäú ÇáúãöÚúÑóÇÖö İóŞóÇáó 
+ÅöĞóÇ ÃóÕóÇÈó ÈöÍóÏøöåö İóßõáú æóÅöĞóÇ ÃóÕóÇÈó ÈöÚóÑúÖöåö İóáóÇ ÊóÃúßõáú 
+İóÅöäøóåõ æóŞöíĞñ ŞõáúÊõ ÃõÑúÓöáõ ßóáúÈöí ŞóÇáó ÅöĞóÇ ÓóãøóíúÊó İóßõáú æóÅöáøóÇ 
+İóáóÇ ÊóÃúßõáú æóÅöäú Ãóßóáó ãöäúåõ İóáóÇ ÊóÃúßõáú İóÅöäøóãóÇ ÃóãúÓóßó 
+áöäóİúÓöåö İóŞóÇáó ÃõÑúÓöáõ ßóáúÈöí İóÃóÌöÏõ Úóáóíúåö ßóáúÈğÇ ÂÎóÑó İóŞóÇáó áóÇ 
+ÊóÃúßõáú áöÃóäøóßó ÅöäøóãóÇ ÓóãøóíúÊó Úóáóì ßóáúÈößó</p>
+</font></span><font FACE="Times New Roman">
+<p class="style6">2854. Dari Adi bin Hatim: Aku bertanya kepada Nabi SAW tentang (status 
+binatang buruan yang terbunuh karena terkena) tombak yang runcing?, lalu beliau 
+menjawab, <i>&quot;Jika (mati karena) terkena bagian yang tajam, maka kamu boleh 
+memakannya, namun jika (mati karena) terkena gagangnya yang tumpul maka kamu 
+tidak boleh makan, karena itu (termasuk) bangkai.&quot; </i>Aku bertanya lagi, 
+&quot;Bagaimana jika aku (membunuh binatang buruan melalui) anjingku?&quot; Nabi SAW 
+menjawab, <i>&quot;Jika (saat melepaskan anjing) kamu telah menyebut nama Allah, maka kamu boleh memakannya, namun jika tidak (menyebut nama Allah) 
+maka kamu tidak boleh memakannya. Jika anjingmu telah memakannya maka kamu tidak 
+boleh memakannya, karena itu berarti ia menangkapnya untuk dirinya.&quot; 
+</i>Aku 
+bertanya lagi, &quot;Bagaimana jika aku melihat ada anjing lain (yang membunuh 
+binatang buruan tersebut)? Nabi SAW menjawab, <i>&quot;Kamu tidak boleh memakannya, 
+karena kamu menyebut nama Allah (hanya) untuk anjingmu. &quot; <b>(Shahih: Muttafaq 
+'Alaih)</p>
+</b></i>
+</font><span LANG="AR-SA"><font SIZE="6" class="style9">
+<p DIR="RTL" class="style8">ÃóÈóÇ ËóÚúáóÈóÉó ÇáúÎõÔóäöíøó íóŞõæáõ ŞõáúÊõ<span lang="en-us">
+</span>íóÇ ÑóÓõæáó Çááøóåö Åöäøöí ÃóÕöíÏõ ÈößóáúÈöí ÇáúãõÚóáøóãö æóÈößóáúÈöí 
+ÇáøóĞöí áóíúÓó ÈöãõÚóáøóãò ŞóÇáó ãóÇ ÕöÏúÊó ÈößóáúÈößó ÇáúãõÚóáøóãö İóÇĞúßõÑú 
+ÇÓúãó Çááøóåö æóßõáú æóãóÇ ÃóÕøóÏúÊó ÈößóáúÈößó ÇáøóĞöí áóíúÓó ÈöãõÚóáøóãò 
+İóÃóÏúÑóßúÊó ĞóßóÇÊóåõ İóßõáú</p>
+</font></span><font FACE="Times New Roman">
+<p class="style6">2855. Dari Abu Tsa'lanbah Al Khusyani, dia berkata: Aku bertanya, &quot;Wahai 
+Rasulullah, aku berburu dengan menggunakan anjing yang terlatih dan anjing yang 
+tidak terlatih?&quot; Rasulullah SAW menjawab, <i>&quot;Binatang yang diburu oleh anjingmu 
+yang terlatih hendaklah menyebut nama Allah lalu makanlah, sedangkan binatang 
+yang diburu oleh anjingmu yang tidak terlatih jika kamu sempat menyembelihnya 
+maka makanlah.'<sup>1'' <b>(Shahih)</p>
+</b></sup></i>
+</font><span LANG="AR-SA"><font SIZE="6" class="style9">
+<p DIR="RTL" class="style8">ÃóÈõæ ËóÚúáóÈóÉó ÇáúÎõÔóäöíøõ ŞóÇáó<span lang="en-us">
+</span>ŞóÇáó áöí ÑóÓõæáõ Çááøóåö Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó íóÇ ÃóÈóÇ 
+ËóÚúáóÈóÉó ßõáú ãóÇ ÑóÏøóÊú Úóáóíúßó ŞóæúÓõßó æóßóáúÈõßó ÒóÇÏó Úóäú ÇÈúäö ÍóÑúÈò 
+ÇáúãõÚóáøóãõ æóíóÏõßó İóßõáú ĞóßöíøğÇ æóÛóíúÑó Ğóßöíøò</p>
+</font></span><font FACE="Times New Roman">
+<p class="style6">2856. Dari Abu Tsa'labah Al Khusyani, ia berkata: Rasulullah bersabda 
+kepadaku, <i>&quot;Wahai Abu Tsa'labah, makanlah binatang buruan yang telah terkena 
+anak busurmu, anjingmu yang terlatih, dan tanganmu, baik yang disembelih maupun 
+tidak.&quot; <b>(Shahih)</p>
+</b></i></font><span LANG="AR-SA"><font SIZE="6" class="style9">
+<p DIR="RTL" class="style8">Úóäú ÚóãúÑöæ Èúäö ÔõÚóíúÈò Úóäú ÃóÈöíåö Úóäú ÌóÏøöåö<span lang="en-us">
+</span>Ãóäøó ÃóÚúÑóÇÈöíøğÇ íõŞóÇáõ áóåõ ÃóÈõæ ËóÚúáóÈóÉó ŞóÇáó íóÇ ÑóÓõæáó 
+Çááøóåö Åöäøó áöí ßöáóÇÈğÇ ãõßóáøóÈóÉğ İóÃóİúÊöäöí İöí ÕóíúÏöåóÇ İóŞóÇáó 
+ÇáäøóÈöíøõ Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó Åöäú ßóÇäó áóßó ßöáóÇÈñ ãõßóáøóÈóÉñ 
+İóßõáú ãöãøóÇ ÃóãúÓóßúäó Úóáóíúßó ŞóÇáó ĞóßöíøğÇ Ãóæú ÛóíúÑó Ğóßöíøò ŞóÇáó 
+äóÚóãú ŞóÇáó İóÅöäú Ãóßóáó ãöäúåõ ŞóÇáó æóÅöäú Ãóßóáó ãöäúåõ İóŞóÇáó íóÇ ÑóÓõæáó 
+Çááøóåö ÃóİúÊöäöí İöí ŞóæúÓöí ŞóÇáó ßõáú ãóÇ ÑóÏøóÊú Úóáóíúßó ŞóæúÓõßó ŞóÇáó 
+ĞóßöíøğÇ Ãóæú ÛóíúÑó Ğóßöíøò ŞóÇáó æóÅöäú ÊóÛóíøóÈó Úóäøöí ŞóÇáó æóÅöäú 
+ÊóÛóíøóÈó Úóäúßó ãóÇ áóãú íóÖöáøó Ãóæú ÊóÌöÏú İöíåö ÃóËóÑğÇ ÛóíúÑó Óóåúãößó 
+ŞóÇáó ÃóİúÊöäöí İöí ÂäöíóÉö ÇáúãóÌõæÓö Åöäú ÇÖúØõÑöÑúäóÇ ÅöáóíúåóÇ ŞóÇáó 
+ÇÛúÓöáúåóÇ æóßõáú İöíåóÇ</p>
+</font></span><font FACE="Times New Roman">
+<p class="style6">2857. Dari Abdullah bin Amru bin Al Ash: Seorang Badui —yang dikenal dengan 
+nama Abu Tsa'labah— berkata, &quot;Ya Rasulullah, aku mempunyai anjing terlatih, 
+berilah aku hukum tentang hasil buruannya?&quot; Nabi SAW menjawab, <i>&quot;Jika anjingmu 
+telah terlatih, maka makanlah binatang buruan yang ia peroleh untukmu&quot;. I</i>a 
+bertanya lagi, &quot;Baik yang telah tersembelih maupun tidak?&quot; Beliau SAW menjawab,
+<i>&quot;Ya.&quot; </i>Ia bertanya lagi, &quot;Bagaimana jika ia telah memakannya?&quot; Rasulullah 
+SAW menjawab, <i>&quot;Walaupun ia telah memakannya. &quot; </i>Ia berkata, &quot;Ya 
+Rasulullah, beri hukum tentang busur panahku?&quot; Beliau SAW menjawab, <i>&quot;Makanlah 
+binatang buruan yang telah terkenai busurmu.&quot; </i>Ia bertanya lagi, &quot;Tersembelih 
+maupun tidak?&quot; Dan walaupun ia telah kabur dariku?&quot; Beliau menjawab, <i>
+&quot;Walaupun ia telah kabur darimu, selama tidak tersesat atau kamu temukan bekas 
+lemparan busur panahmu pada bagian tubuhnya. &quot; </i>Ia bertanya lagi, &quot;Berilah 
+hukum kepadaku tentang bejana milik orang Majusi jika kami terpaksa?&quot; Beliau 
+menjawab, <i>&quot;Basuhlah bejana itu lalu makanlah dengannya. &quot; <strong>(Hasan)</strong></p>
+</i>
+<p>Kalimat, <i>&quot;Walaupun ia telah memakannya.'''' </i>statusnya mungkar.</p>
+</font></span></FONT></P><FONT size=2>
+<HR>
+</FONT><FONT face=Tahoma color=#808080 size=1>Copyright © 2007-2008 
+kampungsunnah.org</FONT></DIV>
+</body>
+</html>
