@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+TR { 
+  visibility: hidden;
+}
+</style>
+<head><script language="JavaScript">
+<!--
+
+var x,y
+var step=20
+var flag=0
+
+var message="Kampung Sunnah."
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : event.clientX
+	y = (document.layers) ? e.pageY : event.clientY
+	flag=1
+}
+
+function textfollow() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.all.span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("textfollow()",10)
+}
+
+//-->
+</script>
+
+<STYLE>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:8pt;
+	font-family:verdana;
+	color:FF00FF
+}
+.style1 {
+	font-size: small;
+}
+.style2 {
+	font-size: small;
+	font-style: italic;
+}
+.style3 {
+	font-size: small;
+	font-style: italic;
+	font-weight: bold;
+}
+.style4 {
+	font-size: small;
+	font-weight: bold;
+}
+.style5 {
+	text-align: center;
+}
+.style6 {
+	text-align: justify;
+}
+.style7 {
+	font-family: "Traditional Arabic";
+	font-weight: bold;
+	text-align: justify;
+}
+.style8 {
+	font-size: large;
+}
+.style9 {
+	font-family: "Traditional Arabic";
+	font-weight: bold;
+	font-size: large;
+	text-align: justify;
+}
+</STYLE>
+<title>34. Kain Kafan</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1256">
+
+
+
+
+<script type="text/javascript" language="JavaScript" src="../../template/nonscroll.js"></script>
+<style type="text/css" media="screen">
+.fixbar
+ {
+padding: 0px 0px 0px 0px;
+border-bottom: none;
+vertical-align: top;
+z-index: 2;
+visibility: visible;
+left: 0;
+top: 0;
+position: absolute;
+width: 100%;
+height: 31px;
+ }
+.content
+ {
+ left: 0;
+ top: 40px;
+ margin: 0;
+ position: absolute;
+ padding: 10px;
+ overflow: visible;
+ height: 100%;
+ z-index: 1;
+ }
+</style>
+<style type="text/css" media="print">
+.fixbar
+ { }
+.content
+ { overflow: visible; }
+</style>
+</head>
+
+<body bgColor=#ffffff leftMargin=0 topMargin=0 scroll=no marginheight="0" 
+marginwidth="0">
+<DIV class=fixbar id=nsr>
+<TABLE style="WIDTH: 100%; HEIGHT: 31px" height=30 cellSpacing=5 cellPadding=2 
+width="100%" bgColor=green border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD vAlign=center align=left height=30>
+      <P align=center><SPAN class=title></SPAN><FONT color=#f0f0f0><FONT 
+      face=Tahoma color=#dadada></FONT></FONT><STRONG><FONT face=Tahoma 
+      color=white size=2>Shahih Sunan Abu Daud </FONT></STRONG></P>
+      <P align=center><STRONG><FONT face=Tahoma color=white size=2>Muhammad 
+      Nashiruddin Al-Albani</FONT></STRONG></P></TD>
+    <TD align=right width=33><IMG height=34 alt="" src="../../template/logo.gif" width=34> </TD></TR></TBODY></TABLE></DIV>
+<DIV class=content id=mainbody>
+<P><FONT face=Arial size=2>
+<SCRIPT language=JavaScript>
+<!--
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+//-->
+</SCRIPT>
+
+<P class="style5">&nbsp;<FONT face="Times New Roman" size="2"><span class="style4">34. Kain Kafan</span></P>
+<span LANG="AR-SA"><font SIZE="6" class="style8">
+<p DIR="RTL" class="style7">ÌóÇÈöÑó Èúäó ÚóÈúÏö Çááøóåö íõÍóÏøöËõ<span lang="en-us">
+</span>Úóäú ÇáäøóÈöíøö Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó Ãóäøóåõ ÎóØóÈó íóæúãğÇ 
+İóĞóßóÑó ÑóÌõáğÇ ãöäú ÃóÕúÍóÇÈöåö ŞõÈöÖó İóßõİøöäó İöí ßóİóäò ÛóíúÑö ØóÇÆöáò 
+æóŞõÈöÑó áóíúáğÇ İóÒóÌóÑó ÇáäøóÈöíøõ Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó Ãóäú 
+íõŞúÈóÑó ÇáÑøóÌõáõ ÈöÇááøóíúáö ÍóÊøóì íõÕóáøóì Úóáóíúåö ÅöáøóÇ Ãóäú íóÖúØóÑøó 
+ÅöäúÓóÇäñ Åöáóì Ğóáößó æóŞóÇáó ÇáäøóÈöíøõ Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó 
+ÅöĞóÇ ßóİøóäó ÃóÍóÏõßõãú ÃóÎóÇåõ İóáúíõÍúÓöäú ßóİóäóåõ</p>
+</font></span>
+<P class="style6"><span class="style1">3148. Dari Jabir bin Abdullah, ia memberitahukan Nabi SAW bahwa pada suatu 
+hari ia telah berkhitbah. Kemudian Jabir menyebutkan kepada beliau bahwa semalam 
+ada di antara sahabat beliau meninggal yang dibungkus dengan kain kafan yang 
+tidak panjang dan dikuburkan di malam hari. (Mendengar berita dari Jabir ini) 
+kemudian Rasulullah SAW mencerca sikap penguburan di malam hari tersebut 
+sehingga mayat di shalati (terlebih dahulu), kecuali penguburan itu dalam 
+kondisi darurat. Nabi SAW bersabda, <I>"Jika kalian mengkafani Mayat, maka 
+perbaguslah kain kafannya. " <B>(Shahih:Muslim) </B>Al Ahkam </I>57.</P>
+<span LANG="AR-SA"><font SIZE="6" class="style8">
+<p DIR="RTL" class="style7">Úóäú ÚóÇÆöÔóÉó ŞóÇáóÊú<span lang="en-us"> </span>
+ÃõÏúÑöÌó ÇáäøóÈöíøõ Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó İöí ËóæúÈò ÍöÈóÑóÉò Ëõãøó 
+ÃõÎøöÑó Úóäúåõ</p>
+</font></span>
+<P class="style6">3149. Dari Aisyah, ia berkata: (Jasad) Nabi SAW ditutupi dengan kain kafan 
+dari selimut (Yaman), kemudian selimut itu dikenakan di (lapisan paling) akhir. 
+<I> 
+<B>(Shahih: Muttafaq 'Alaih)</P></B></I>
+<span LANG="AR-SA"><font SIZE="6" class="style8">
+<p DIR="RTL" class="style7">Úóäú ÌóÇÈöÑò ŞóÇáó<span lang="en-us"> </span>
+ÓóãöÚúÊõ ÑóÓõæáó Çááøóåö Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó íóŞõæáõ ÅöĞóÇ 
+Êõæõİøöíó ÃóÍóÏõßõãú İóæóÌóÏó ÔóíúÆğÇ İóáúíõßóİøóäú İöí ËóæúÈò ÍöÈóÑóÉò</p>
+</font></span>
+<P class="style6">3150. Dari Jabir, ia berkata: Saya mendengar Rasulullah SAW bersabda, 
+</span> 
+<I><span class="style1">"Jika ada di antara kalian meninggal dan ia 
+mempunyai sesuatu (kekayaan), maka berilah ia kain kafan selimut 
+(dari Yaman). &quot; </span><span class="style4">{Shahih) </span>
+<span class="style1">Al Ahkam </span></i><span class="style1">63.</span></p>
+<span LANG="AR-SA"><font SIZE="6" class="style8">
+<p DIR="RTL" class="style7">ÚóÇÆöÔóÉõ ŞóÇáóÊú<span lang="en-us"> </span>ßõİøöäó 
+ÑóÓõæáõ Çááøóåö Õóáøóì Çááøóåõ Úóáóíúåö æóÓóáøóãó İöí ËóáóÇËóÉö ÃóËúæóÇÈò 
+íóãóÇäöíóÉò ÈöíÖò áóíúÓó İöíåóÇ ŞóãöíÕñ æóáóÇ ÚöãóÇãóÉñ</p>
+</font></span>
+<p class="style6"><span class="style1">3151. Dari Aisyah, ia berkata: Kain kafan Rasulullah SAW 
+terdiri dari tiga kain selimut dari Yaman berwarna putih tanpa baju kurung dan 
+tanpa serban. </span><span class="style3">{Shahih: Muttafaq 'Alaih)</span></p>
+<span LANG="AR-SA">
+<p DIR="RTL" class="style9">Úóäú ÚóÇÆöÔóÉó ãöËúáóåõ ÒóÇÏó ãöäú ßõÑúÓõİò ŞóÇáó 
+İóĞõßöÑó áöÚóÇÆöÔóÉó Şóæúáõåõãú İöí ËóæúÈóíúäö æóÈõÑúÏò ÍöÈóÑóÉò İóŞóÇáóÊú ŞóÏú 
+ÃõÊöíó ÈöÇáúÈõÑúÏö æóáóßöäøóåõãú ÑóÏøõæåõ æóáóãú íõßóİøöäõæåõ İöíåö</p>
+</span>
+<p class="style6"><span class="style1">3152. Dari Aisyah, seperti hadits di atas... Hanya 
+terdapat tambahan </span><span class="style2">min kursuf </span>
+<span class="style1">(Dari kapas). Perawi berkata: Ketika disampaikan perkataan 
+para sahabat, &quot;Beliau dikafani dengan dua pakaian dan satu kain selimut&quot; Aisyah 
+menjawab, &quot;Telah diberikan kain selimut, tetapi mereka (sahabat yang mengenakan 
+kafan Nabi SAW) menolaknya, sehingga kain selimut itu tidak dijadikan kafan 
+untuk beliau.&quot; </span><b><span class="style2">{Shahih: </span>
+<span class="style1">Muslim)</span></p>
+</b></font></span></FONT></P><FONT size=2>
+<HR>
+</FONT><FONT face=Tahoma color=#808080 size=1>Copyright © 2007-2008 
+kampungsunnah.org</FONT></DIV>
+</body>
+</html>
