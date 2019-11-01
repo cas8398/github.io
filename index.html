@@ -1429,23 +1429,7 @@ $(elem).attr('onerror',"'srcdoc','<p>Dibutuhkan internet untuk mengakses halaman
     
 
     <script >
-    $('<img/>', {
-    id: "_tmpIMG",
-    src: "http://weather.gc.ca/weathericons/00.gif"
-}).hide().on({
-    load: siteOnline,
-    error: siteNotOnline
-}).appendTo('body');
 
-function siteNotOnline(){ 
-    alert('Sambungan internet terputus');
-    $('#_tmpIMG').remove();
-    $('#iframe').hide();
-}
-
-function siteOnline(){ 
-    $('#_tmpIMG').remove();
-}
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
