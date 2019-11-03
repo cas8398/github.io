@@ -16,4 +16,21 @@
 	if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js');
 }
+    $('<img/>', {
+    id: "_tmpIMG",
+    src: "http://weather.gc.ca/weathericons/00.gif"
+}).hide().on({
+    load: siteOnline,
+    error: siteNotOnline
+}).appendTo('body');
+
+function siteNotOnline(){ 
+    alert('Sambungan internet terputus');
+    $('#_tmpIMG').remove();
+    $('#iframe').hide();
+}
+
+function siteOnline(){ 
+    $('#_tmpIMG').remove();
+}
 </script>
