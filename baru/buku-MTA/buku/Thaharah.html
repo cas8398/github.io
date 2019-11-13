@@ -63,10 +63,76 @@ height: 100%;
   border-top: 1px solid #d1d1d1;
   left: 0px;
 }
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  background-color:#f1f1f1;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
         </style>
     </head>
     
       
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <iframe src="http://flagodna.my.id/tokomta/" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:180px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+  </div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
            
                 
 <div class="bg" style="margin-left: -5%; margin-right: -4%"></div>
@@ -116,7 +182,7 @@ Buku Thaharah (Bersuci) diterbitkan oleh Yayasan Majlis Tafsir Al-Quran (MTA)</d
                 </div>
                 <div class="navbar1"     style="font-size: 19px;color:  #fff;  left: 0%;text-align: center; "> <b>
                    <button style=" background-color:#25D366; border-radius:22px"> <a style="color:#111" target="_blank" href="intent://send/6281329142000#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">Pesan Via Whatsapp</a>
-                </b></a></button> <button  style=" background-color:#ebeb34; border-radius:6px"> <a style="color:#111" target="_blank" href="sms://6281329142000?body=JOIN">Pesan vss SMS</a>
+                </b></a></button> <button  style=" background-color:#ebeb34; border-radius:6px"> <a style="color:#111" href="http://flagodna.my.id/tokomta/" target="_blank">Pesan via Tiket</a>
                 </b></a></button></div>
  
 </div>
