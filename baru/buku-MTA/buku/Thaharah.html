@@ -42,7 +42,7 @@ height: 100%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:  contain;
 }
 
 .navbar { position: fixed;
@@ -55,7 +55,7 @@ height: 100%;
   left: 0px;
 }
  .navbar1 { position: fixed;
-  background-color:#f1f1f1;
+  background-color:#710eab;
  
  bottom: 0;
   width: 100%;
@@ -116,26 +116,10 @@ height: 100%;
     </head>
     
    
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content"> 
-     <div style="padding-top:56.25%;background-color: yellow;">
-  <iframe src="http://flagodna.my.id/tokomta/" frameborder="0" allowfullscreen
-    style="width:100%;height:100%;"></iframe>
-</div>
-  </div>
-</div>
-<script>
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-</script>
            
-                
+   
+<div class="bg" style="margin-left: -5%; margin-right: -4%"></div>             
  
        <body style="background: #f1f1f1;top: 22%; padding-left: 5%; padding-right: 4%" >
   <div style="text-align: center;">     
@@ -170,16 +154,43 @@ BAB VIII HAIDL, ISTIHADLAH DAN NIFAS<br />1. Cara Membedakan darah Haidl<br />2.
 Buku Thaharah (Bersuci) diterbitkan oleh Yayasan Majlis Tafsir Al-Quran (MTA)</div>
 
 
+<style type="text/css">
+  
+  #example1 {
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #fff
+}
+</style>
+
+
+ <h3> Ingin Memesan Via Whatsapp ?</h3>
+<div id="example1"> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<p contenteditable="true">Nama= <br> Alamat Lengkap = <br> Kecamatan = <br>  Kabupaten = <br> Kode Pos = <br> Provinsi = <br> Nomor Hp= <br> Pesanan= Buku THAHARAH <br> Jumlah=</p>
+<button onclick="copyToClipboard('p')">Copy Format Pesanan</button>
+</div>
+
+
+
+<script>
+function copyToClipboard(element) {
+  var text = $(element).clone().find('br').prepend('\r\n').end().text()
+  element = $('<textarea>').appendTo('body').val(text).select()
+  document.execCommand('copy')
+  element.remove()
+}
+</script>
 
 <br><br><br><br><br><br>
 
   </p>
-
  
 
-
- <div  class="navbar"  style="font-size: 21px;color: #710eab;  left: 0%;text-align: center; "> <b>Toko MTA</b>
-                </div>
+ 
                 <div class="navbar1"     style="font-size: 19px;color:  #fff;  left: 0%;text-align: center; "> <b>
                    <button style=" background-color:#25D366; border-radius:22px"> <a style="color:#111" target="_blank" href="intent://send/6281329142000#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">Pesan Via Whatsapp</a>
                 </b></a></button> <button  style=" background-color:#ebeb34; border-radius:6px"> <a style="color:#111" href="http://flagodna.my.id/tokomta/">Pesan via Tiket</a>
