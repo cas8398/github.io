@@ -34,7 +34,7 @@ height: 100%;
 
 .bg {
   /* The image used */
-  background-image: url("gambar/VCD-PENGAJIAN-PERESMIAN-GEDUNG-MTA-PUSAT.jpeg");
+  background-image: url("gambar/VCD-PENGAJIAN-PERESMIAN-GEDUNG-MTA-PUSAT.jpg");
 
   /* Full height */
   height: 50%; 
@@ -42,7 +42,8 @@ height: 100%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+ background-size:  contain;
+  background-color: #ddd
 }
 
 .navbar { position: fixed;
@@ -55,7 +56,7 @@ height: 100%;
   left: 0px;
 }
  .navbar1 { position: fixed;
-  background-color:#f1f1f1;
+  background-color:#710eab;
  
  bottom: 0;
   width: 100%;
@@ -63,7 +64,8 @@ height: 100%;
   border-top: 1px solid #d1d1d1;
   left: 0px;
 }
-        </style>
+p 
+{ color: #686868 }   </style>
     </head>
     
       
@@ -82,19 +84,70 @@ Deskripsi</h2>
 <div style="-webkit-hyphenate-character: &quot;‐&quot;; border: 0px; color: #686868; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 14px; margin-bottom: 1.618em; orphans: 3; padding: 0px; vertical-align: baseline; widows: 3;"><br>
 <span style="background-color: white; color: #686868; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 14px; orphans: 3; widows: 3;">VCD Pengajian dalam rangka meresmikan Gedung MTA di Jalan Ronggo Warsito 111A, Surakarta oleh Presiden Republik Indonesia Dr. H. Susilo Bambang Yudhoyono dan &nbsp;ikut menyertai beliau di peresmian gedung MTA ini adalah Menteri Agama dan beberapa menteri kabinet Indonesia Bersatu lainnya, Menteri Kesehatan, Menteri Kominfo, Mensesneg dan beberapa Menteri lainya, hadir juga ketua MPR RI Dr. Hidayat Nur Wahid, Gubernur Jawa Tengah dan MUSPIDA&nbsp;serta Kepala Daerah Tingkat II yang ada di Solo Raya dan sekitarnya pada Hari Ahad, 8 Maret 2009.</span>
 
+</span></p> 
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Baca Lebih"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Perpendek"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<style type="text/css">
+  
+#more {display: none;}
+
+  #example1 {
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #fff
+}
+a {
+  text-decoration: none;
+}
+</style>
+
+
+ <h3> Ingin Memesan Via Whatsapp ?</h3>
+<div id="example1"> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<p contenteditable="true">Nama= <br> Alamat Lengkap = <br> Kecamatan = <br>  Kabupaten = <br> Kode Pos = <br> Provinsi = <br> Nomor Hp= <br> Pesanan= VCD Pengajian Peresmian Gedung MTA Pusat
+ <br> Jumlah=</p>
+<button onclick="copyToClipboard('p')">Copy Format Pesanan</button>
+</div>
+
+
+
+<script>
+function copyToClipboard(element) {
+  var text = $(element).clone().find('br').prepend('\r\n').end().text()
+  element = $('<textarea>').appendTo('body').val(text).select()
+  document.execCommand('copy')
+  element.remove()
+}
+</script>
+
 <br><br><br><br><br><br>
 
   </p>
-
  
 
-
- <div  class="navbar"  style="font-size: 21px;color: #710eab;  left: 0%;text-align: center; "> <b>Toko MTA</b>
-                </div>
+ 
                 <div class="navbar1"     style="font-size: 19px;color:  #fff;  left: 0%;text-align: center; "> <b>
-                   <button style=" background-color:#25D366; border-radius:22px"> <a style="color:#111" target="_blank" href="https://wa.me/6285200210288?text=Assalamualaikum%20wr.wb%20Saya%20ingin%20membeli%20buku%20=%20VCD-Pengajian-Peresmian-Gedung-MTA-Pusat">Pesan via Whatsapp</a>
-                </b></a></button> <button  style=" background-color:#ebeb34; border-radius:6px"> <a style="color:#111" target="_blank" href="sms://+6285200210288?body=Assalamualaikum%20wr.wb%20Saya%20ingin%20membeli%20buku%20=%20VCD-Pengajian-Peresmian-Gedung-MTA-Pusat">Pesan vis SMS</a>
-                </b></a></button></div>
+                   <button style=" background-color:#25D366; border-radius:22px"> <a style="color:#111" target="_blank" href="intent://send/6281329142000#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">Pesan Via Whatsapp</a>
+               
  
 </div>
 
