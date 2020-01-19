@@ -72,10 +72,19 @@ height: 100%;
  
        <body style="background: #f1f1f1;top: 22%; font-size: 18px" >
        
-<div class="bg" ></div>
+<div class="bg" id="someDiv" ></div>
+<button href="#someDiv">aa</button>
 <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 <button class="button"  class="button" data-sharer="whatsapp" data-title="Checkout Sharer.js!" data-url="https://mta.or.id/wp-content/uploads/2020/01/mabit-ngawi-150x150.png">Share on Facebook</button>
 <button class="share-button">Share with the Web Share API</button>
+<script type="text/javascript">
+  $(elem).on('click', function() {
+    // add new buttons with share behaviour
+    $('#bg').append('<button class="twitter" data-title="Some button" data-url="somesite.com"></button>');
+    window.Sharer.init();
+})
+</script>
+
 <h2 style=" padding-left: 9%; padding-right: 2%">Pemirsa MTATV Gandeng Relawan Salurkan Bantuan Air Bersih</h2>
 <p style=" padding-left: 5%; padding-right: 4%">Sleman - Untuk yang ke 2 kalinya MTA cabang Prambanan perwakilan Yogyakarta kembali menyalurkan bantuan air bersih ke wilayah terdampak kekeringan di dusun Lemahbang, desa Gayamharjo kecamatan Prambanan, kabupaten Sleman pada hari Kamis 31/10/2019 bantuan yang disalurkan berupa 10 tangki air bersih berasal dari swadaya para simpatisan dan pemirsa MTATV.
 <br><br>
