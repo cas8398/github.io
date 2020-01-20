@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MTA one</title>
+       
+        <style type="text/css" media="screen">
+            #jqt.fullscreen #home .info {
+                display: none;
+            }
+            div#jqt #about {
+                padding: 100px 10px 40px;
+                text-shadow: rgba(0, 0, 0, 0.3) 0px -1px 0;
+                color: #999;
+                font-size: 13px;
+                text-align: center;
+                background: #161618;
+            }
+            div#jqt #about p {
+                margin-bottom: 8px;
+            }
+            div#jqt #about a {
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+            }
+body, html {
+height: 100%;
+  margin: 0;
+}
+* {
+  text-decoration: none
+}
+
+.navbar { position: fixed;
+  background-color: #fff;
+ 
+  top: 0;
+  width: 100%;
+  height: 5%;
+  border-bottom: 1px solid #d1d1d1;
+  left: 0px;
+}
+ .navbar1 { position: fixed;
+  background-color: #710eab;
+ 
+ bottom: 0;
+  width: 100%;
+  height: 5%;
+  border-top: 1px solid #d1d1d1;
+  left: 0px;
+}
+
+.* {
+  box-sizing: border-box;
+}
+
+body { 
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -6px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 6px;
+  min-height: 290px;
+  max-height: 290px;
+  margin-bottom: 35px;
+  padding-bottom: 45px
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  margin-right: 5%;
+  float: right;
+  width: 39.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content { 
+  padding: 1px; 
+  border-radius: 8px;
+  margin-left:-5px;
+  margin-right:-5px;
+  bottom: 4px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #710eab;
+  color: white;
+}
+ 
+   div.scrollmenu {
+  background-color: #111;
+  overflow: auto;
+  white-space: nowrap;
+  border: solid 1px;
+
+  
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: #111;
+  text-align: center;
+  padding: 17px;
+  text-decoration: none;
+  
+}
+
+div.scrollmenu a:hover {
+  background-color: #710eab;
+}   
+.sticky {
+  position: fixed;
+  top: 4%;
+  width: 100%;
+  margin-left: -5%;
+}  
+img {
+  width: 250px;
+  height :190px;
+  border-radius: 8px; 
+
+  border: solid 1px;
+} 
+  
+ </style>
+    </head>
+  
+           
+                
+
+       <body style="top: 22%;
+background-color:#f1f1f1;" >
+      <script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages = document.querySelectorAll("img.lazy");    
+  var lazyloadThrottleTimeout;
+  
+  function lazyload () {
+    if(lazyloadThrottleTimeout) {
+      clearTimeout(lazyloadThrottleTimeout);
+    }    
+    
+    lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+    }, 20);
+  }
+  
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});
+  </script>
+<div class="main">
+ 
+<div id="sticky"   class="scrollmenu" >
+<div id="myBtnContainer"  >
+  <a class="btn " href="Kitab Hadist.html" > Kitab Hadist </a>
+ 
+  <a class="btn" href="menuBuku.html"> Buku</a>
+  <a class="btn" href="Serial Tahsin.html"> Serial Tahsin</a>
+ 
+
+
+  <a class="btn active"> Kumpulan Brosur</a>
+  <a class="btn" href="DVD.html"> DVD / VCD</a>
+
+  <a class="btn" href="PDF gratis.html"> PDF (Gratis)</a>
+  <a class="btn" href="PDF bayar.html"> PDF (Berbayar)</a> 
+</div></div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+
+ 
+ 
+
+  
+   <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/wJOtckK.jpg" alt="Kumpulan Brosur Sunnah dan Bid’ah" style="width:100%"> 
+      <h4><a target="_blank" href="buku/Kumpulan Brosur Sunnah dan Bid’ah.html">Kumpulan Brosur Sunnah... </a></h4>
+     <p>Rp. 6.000</p>
+    </div>
+  </div>
+  <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/xkzn8aN.jpg   " alt="Kumpulan Brosur Ahad Pagi 2005  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202005.html"> Kumpulan Brosur 2005... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+  <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/AarG6er.jpg   " alt="Kumpulan Brosur Ahad Pagi 2006  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202006.html"> Kumpulan Brosur 2006... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+    <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/HhMinnb.jpg   " alt="Kumpulan Brosur Ahad Pagi 2007  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202007.html"> Kumpulan Brosur 2007... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+    <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/pjCAgEK.jpg   " alt="Kumpulan Brosur Ahad Pagi 2008  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202008.html"> Kumpulan Brosur 2008... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+    <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/zaDHWgc.jpg   " alt="Kumpulan Brosur Ahad Pagi 2010  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202010.html"> Kumpulan Brosur 2010... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+    <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/LpWf3b8.jpg   " alt="Kumpulan Brosur Ahad Pagi 2011  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202011.html"> Kumpulan Brosur 2011... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+    <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/3U8xAEE.jpg   " alt="Kumpulan Brosur Ahad Pagi 2012  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202012.html"> Kumpulan Brosur 2012... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+    <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/tLkQvGt.jpg   " alt="Kumpulan Brosur Ahad Pagi 2013  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202013.html"> Kumpulan Brosur 2013... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+    <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/GVxjDG5.jpg   " alt="Kumpulan Brosur Ahad Pagi 2014  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202014.html"> Kumpulan Brosur 2014... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+    <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/hOMMvUX.jpg   " alt="Kumpulan Brosur Ahad Pagi 2015  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202015.html"> Kumpulan Brosur 2015... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+    <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/GJHimOd.jpg   " alt="Kumpulan Brosur Ahad Pagi 2016  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202016.html"> Kumpulan Brosur 2016... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+    <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/7sj5zNN.jpg   " alt="Kumpulan Brosur Ahad Pagi 2018  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Ahad%20Pagi%202018.html"> Kumpulan Brosur 2018... </a></h4>
+     <p>Rp. 35.000</p>
+    </div>
+  </div>
+   <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/FBhUzoR.jpg  " alt="Kumpulan Brosur Halal dan Haram dalam Islam (Tentang Makanan) " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Halal%20dan%20Haram%20dalam%20Islam%20(Tentang%20Makanan).html"> Kumpulan Brosur Halal... </a></h4>
+     <p>Rp. 15.000</p>
+    </div>
+  </div>
+     <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/xXOFwBR.jpg  " alt="Kumpulan Brosur Risalah Shalat Safar " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan%20Brosur%20Risalah%20Shalat%20Safar.html"> Kumpulan Brosur Safar... </a></h4>
+     <p>Rp. 6.000</p>
+    </div>
+  </div>
+     <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/6O6l4xH.jpg   " alt="Kumpulan Brosur Risalah Shalat Berjama’ah  " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan-Brosur-Risalah-Shalat-Berjama’ah.html"> Kumpulan Brosur Berjama’ah... </a></h4>
+     <p>Rp. 10.000</p>
+    </div>
+  </div>
+     <div class="column brosur">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/3Hm31JK.jpg  " alt="Kumpulan Brosur Risalah Shalat Jumat " style="width:100%"> 
+      <h4><a target="_blank" href="kumpulan brosur/Kumpulan-Brosur-Risalah-Shalat-Jumat.html"> Kumpulan Brosur Jumat... </a></h4>
+     <p>Rp. 6.000</p>
+    </div>
+  </div><br> 
+  
+
+
+ 
+
+
+ 
+
+
+
+
+
+<!-- END GRID -->
+</div>
+
+
+ <div  class="navbar1"  style="font-size: 21px;color: #fff;  left: 0%;text-align: center; "> <b>Toko MTA</b>
+                </div> 
+
+</div>
+
+
+
+    </body>
+    <script>
+      if (window.navigator.standalone) {
+        $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
+      }
+      function close_window() { {
+    close();
+  }
+}
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("sticky");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
+</html>
