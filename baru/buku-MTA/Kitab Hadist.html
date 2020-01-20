@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MTA one</title>
+       
+        <style type="text/css" media="screen">
+            #jqt.fullscreen #home .info {
+                display: none;
+            }
+            div#jqt #about {
+                padding: 100px 10px 40px;
+                text-shadow: rgba(0, 0, 0, 0.3) 0px -1px 0;
+                color: #999;
+                font-size: 13px;
+                text-align: center;
+                background: #161618;
+            }
+            div#jqt #about p {
+                margin-bottom: 8px;
+            }
+            div#jqt #about a {
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+            }
+body, html {
+height: 100%;
+  margin: 0;
+}
+* {
+  text-decoration: none
+}
+
+.navbar { position: fixed;
+  background-color: #fff;
+ 
+  top: 0;
+  width: 100%;
+  height: 5%;
+  border-bottom: 1px solid #d1d1d1;
+  left: 0px;
+}
+ .navbar1 { position: fixed;
+  background-color: #710eab;
+ 
+ bottom: 0;
+  width: 100%;
+  height: 5%;
+  border-top: 1px solid #d1d1d1;
+  left: 0px;
+}
+
+.* {
+  box-sizing: border-box;
+}
+
+body { 
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -6px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 6px;
+  min-height: 290px;
+  max-height: 290px;
+  margin-bottom: 35px;
+  padding-bottom: 45px
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  margin-right: 5%;
+  float: right;
+  width: 39.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content { 
+  padding: 1px; 
+  border-radius: 8px;
+  margin-left:-5px;
+  margin-right:-5px;
+  bottom: 4px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #710eab;
+  color: white;
+}
+ 
+   div.scrollmenu {
+  background-color: #111;
+  overflow: auto;
+  white-space: nowrap;
+  border: solid 1px;
+
+  
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: #111;
+  text-align: center;
+  padding: 17px;
+  text-decoration: none;
+  
+}
+
+div.scrollmenu a:hover {
+  background-color: #710eab;
+}   
+.sticky {
+  position: fixed;
+  top: 4%;
+  width: 100%;
+  margin-left: -5%;
+}  
+img {
+  width: 250px;
+  height :190px;
+  border-radius: 8px; 
+
+  border: solid 1px;
+} 
+  
+ </style>
+    </head>
+  
+           
+                
+
+       <body style="top: 22%;
+background-color:#f1f1f1;" >
+      <script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages = document.querySelectorAll("img.lazy");    
+  var lazyloadThrottleTimeout;
+  
+  function lazyload () {
+    if(lazyloadThrottleTimeout) {
+      clearTimeout(lazyloadThrottleTimeout);
+    }    
+    
+    lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+    }, 20);
+  }
+  
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});
+  </script>
+<div class="main">
+ 
+<div id="sticky"   class="scrollmenu" >
+<div id="myBtnContainer"  >
+ 
+  <a class="btn active"  > Kitab Hadist </a>
+ 
+
+  <a class="btn" href="menuBuku.html"> Buku</a>>
+
+  <a class="btn" href="Serial Tahsin.html"> Serial Tahsin</a>
+ 
+
+
+  <a class="btn" href="menu Kumpulan Brosur.html"> Kumpulan Brosur</a>
+  <a class="btn" href="DVD.html"> DVD / VCD</a>
+
+  <a class="btn" href="PDF gratis.html"> PDF (Gratis)</a>
+  <a class="btn" href="PDF bayar.html"> PDF (Berbayar)</a> 
+</div></div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+
+ 
+
+<div class="column hadist">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/h2Cy3Yi.jpg" alt="Ringkasan Hadis Shahih Muslim" style="width:100%">
+      <h4><a target="_blank" href="buku/Ringkasan Hadis Shahih Muslim.html">Ringkasan Hadis Shahih...</a></h4>
+      <p>Rp. 185.000</p>
+    </div>
+  </div>
+<div class="column hadist">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/yt2ZgZT.jpg" alt="Ringkasan Hadis Shahih Al Bukhari" style="width:100%">
+      <h4><a target="_blank" href="buku/Ringkasan Hadis Shahih Al Bukhari.html">Ringkasan Hadis Bukhari...</a></h4>
+      <p>Rp. 185.000</p>
+    </div>
+  </div>
+ <div class="column hadist">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/MCI3Yoo.jpg " alt=" Kitab Hadits Asli Abu Dawud  " style="width:100%">
+      <h4><a target="_blank" href="buku/Kitab-Hadits-Asli-Abu-Dawud.html  ">Kitab Hadits...Dawud </a></h4>
+      <p>Rp. 200.000</p>
+    </div>
+  </div>
+ <div class="column hadist">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/v7ycKKs.jpg  " alt=" Kitab Hadits Asli An-Nasa’i    " style="width:100%">
+      <h4><a target="_blank" href="buku/Kitab-Hadits-Asli-An-Nasa’i.html  ">Kitab Hadits...An-Nasa’i   </a></h4>
+      <p>Rp. 335.000</p>
+    </div>
+  </div>
+<div class="column hadist">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/JXLBc8H.jpg   " alt="Kitab Hadits Asli Al-Muwatha’     " style="width:100%">
+      <h4><a target="_blank" href="buku/Kitab-Hadits-Asli-Al-Muwatha’.html  ">Kitab  Asli...Al-Muwatha’</a></h4>
+      <p>Rp. 150.000</p>
+    </div>
+  </div>
+ <div class="column hadist">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/5s0lYX5.jpg   " alt="Kitab Hadits Asli Muslim     " style="width:100%">
+      <h4><a target="_blank" href="buku/Kitab-Hadits-Asli-Muslim.html  ">Kitab  Asli... Muslim </a></h4>
+      <p>Rp. 220.000</p>
+    </div>
+  
+
+  </div>
+<div class="column hadist">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/bQlb6cO.jpg   " alt="Kitab Hadits Asli Bukhori     " style="width:100%">
+      <h4><a target="_blank" href="buku/Kitab-Hadits-Asli-Bukhori.html  ">Kitab  Asli... Bukhori  </a></h4>
+      <p>Rp. 220.000</p>
+    </div>
+  </div>
+
+<div class="column hadist">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/Vp6sfeu.jpg   " alt="Kitab Hadits Asli Tirmidzi    " style="width:100%">
+      <h4><a target="_blank" href="buku/Kitab%20Hadits%20Asli%20Tirmidzi.html ">Kitab  Asli... Tirmidzi  </a></h4>
+      <p>Rp. 255.000</p>
+    </div>
+  </div>
+
+<div class="column hadist">
+    <div class="content">
+     <img class="lazy" src="blank.gif"  data-src="https://i.imgur.com/PUjyixQ.jpg   " alt="Kitab Hadits Asli Ibnu Majah   " style="width:100%">
+      <h4><a target="_blank" href="buku/Kitab-Hadits-Asli-Ibnu-Majah.html">Kitab  Asli...Ibnu Majah  </a></h4>
+      <p>Rp. 170.000</p>
+    </div>
+  </div><br>
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+<!-- END GRID -->
+</div>
+
+
+ <div  class="navbar1"  style="font-size: 21px;color: #fff;  left: 0%;text-align: center; "> <b>Toko MTA</b>
+                </div> 
+
+</div>
+
+
+
+    </body>
+    <script>
+      if (window.navigator.standalone) {
+        $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
+      }
+      function close_window() { {
+    close();
+  }
+}
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("sticky");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
+</html>
