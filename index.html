@@ -1,9 +1,13 @@
 <!doctype html>
 <html>
- <meta http-equiv="refresh" target="_blank"  content="7; url=https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=mta.flagodna.one" />
+ 
 <head>
   <script data-ad-client="ca-pub-1581091342244841" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <link rel="manifest" href="/manifest.json">     
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"> 
   <script>
     var OneSignal = window.OneSignal || [];
     OneSignal.push(function() {
@@ -457,6 +461,17 @@ border: solid 1px}
 
         </style>
     </head>
+    <script type="text/javascript">
+ if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+     }).catch(function(err) {
+        console.log("No it didn't. This happened:", err)
+    });
+ }
+</script>
     <body>
     	
         <div id="jqt" class="">
